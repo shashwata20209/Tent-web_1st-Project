@@ -429,6 +429,7 @@ header ul {
 
   a {
     color: #fff;
+    
     text-decoration: none;
   }
 }
@@ -529,6 +530,7 @@ footer {
   margin: 0 auto;
   display: flex;
   gap: 120px;
+  flex-wrap: wrap;
 }
 .footer-logo {
   width: 236.27px;
@@ -576,6 +578,8 @@ footer {
       border: 1px solid black;
       background: transparent;
       cursor: pointer;
+      display: inline-block;   
+      width: fit-content;
       a {
         text-decoration: none;
         color: black;
@@ -706,29 +710,46 @@ footer {
   }
 
   footer {
-    padding: 90px 0 30px;
+    padding: 60px 0 20px;
+    
+  }
+  .footer-logo {
+    width: 180px;
+    margin: 0 auto;   /* center logo */
+  }
+  .footer-logo img {
+    margin-left: 0;
   }
   .container {
-    /* flex-direction: column; */
-    gap: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .footer-top {
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 25px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .footer-top .footer-box {
-    margin-bottom: 20px;
-    padding: 0;
+    /* margin-bottom: 15px;
+    padding: 0; */
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
   }
   .footer-bottom {
-    padding: 0 0 20px;
+    flex-direction: column;
+    /* padding-bottom: 20px; */
+    padding: 0;
   }
 
   .bottom-container {
+    flex-direction: column;
     gap: 20px;
     margin-top: 20px;
+    
   }
 }
 
@@ -860,13 +881,18 @@ footer {
     padding: 40px 0 20px;
   }
   .container {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
   .footer-top {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
   }
   .footer-top .footer-box {
+    width: 100%;
     margin-bottom: 20px;
     h3 {
       font-size: 18px;
@@ -880,7 +906,12 @@ footer {
     padding: 0 0 30px;
   }
   .bottom-container {
+    display: flex;
+    flex-direction: column;
     gap: 15px;
-    margin-top: 20px;
+    
+  }
+   .footer-bottom-box{
+    width: 100%;
   }
 }
