@@ -529,9 +529,11 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  
   gap: 120px;
-  flex-wrap: wrap;
+  
 }
+
 .footer-logo {
   width: 236.27px;
   height: 118.13px;
