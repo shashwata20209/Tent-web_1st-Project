@@ -1,0 +1,820 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+}
+.logo {
+  height: 75px;
+  width: 150px;
+  margin-left: 40px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.menu {
+  display: flex;
+  gap: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+header ul {
+  list-style: none;
+}
+
+.menu-right {
+  margin-right: 40px;
+}
+
+.hero {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+  padding: 10px 0px;
+}
+.hero h4 {
+  color: #122c89;
+
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.hero h1 {
+  color: #122c89;
+
+  font-size: 105px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.hero-text {
+  margin: 40px 0;
+}
+.works-btn {
+  padding: 15px 40px;
+  background-color: #122c89;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.businesses-proof {
+  width: 90%;
+  max-width: 1200px;
+  color: #122c89;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 20px 0px;
+  overflow: hidden;
+  p {
+    font-size: 22px;
+    margin: 10px 0px;
+  }
+}
+.logo-slider {
+  display: flex;
+  width: calc(200%);
+  animation: slide 40s linear infinite;
+
+  img {
+    width: 150px;
+    margin: 10px 20px;
+    object-fit: contain;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.service {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.service-text {
+  width: 50%;
+}
+.service-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #122c89;
+
+  margin-bottom: 20px;
+}
+.service-desc {
+  font-size: 21px;
+  color: #3d3d3d;
+  line-height: 1.5;
+  margin: 10px 0;
+  word-spacing: normal;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.service-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #122c89;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.service-image {
+  width: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experience-text {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1200px;
+  gap: 30px;
+}
+.experience-h3 {
+  width: 50%;
+  h3 {
+    color: #122c89;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+    word-spacing: 4px;
+  }
+}
+
+.experience-para {
+  width: 50%;
+}
+
+.experience-title {
+  font-size: 18px;
+  text-align: justify;
+  color: #3f3f3f;
+  margin: 10px 0px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.experience-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding: 30px 0px;
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+  .card {
+    height: 150px;
+    width: 270px;
+    padding: 30px 0px 30px 35px;
+    border-radius: 15px;
+    border-bottom: 2px solid gray;
+  }
+  .blue {
+    background: #dbf2ff;
+  }
+
+  .gray {
+    background: #eee;
+  }
+}
+
+.cta-main {
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+.cta-banner {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 50px;
+  margin: 0 auto;
+
+  background: url(https://tentcomm.com/wp-content/uploads/2024/10/Meet-Our-Team.png);
+  background-size: cover;
+  background-color: rgba(2, 2, 51, 0.6);
+  background-blend-mode: darken;
+  background-position: center;
+  padding: 30px 0px;
+}
+.cta-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  color: white;
+}
+.cta-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.cta-text p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.cta-btn a {
+  background: white;
+  color: #122c89;
+  padding: 15px 35px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.team {
+  text-align: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid #000000;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+    color: #3d3d3d;
+  }
+}
+.team-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 220px;
+  margin: 10px 0px;
+
+  h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #3d3d3d;
+    letter-spacing: 1px;
+  }
+  p {
+    margin: 10px 0px;
+    font-size: 15px;
+    color: #3d3d3d;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}
+.img {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+}
+.img1 {
+  background: url(https://tentcomm.com/wp-content/uploads/2024/12/SAJON-HEADSHOT-DP-600x600.png);
+  background-size: cover;
+  background-position: center;
+}
+.img2 {
+  background: url(https://tentcomm.com/wp-content/uploads/2024/10/Nahid1-600x600.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img3 {
+  background: url(https://tentcomm.com/wp-content/uploads/2024/10/Asif1-600x600.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img4 {
+  background: url(https://tentcomm.com/wp-content/uploads/2025/07/AzharPictureforWebsite-1-600x600.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.team-btn {
+  background: #122c89;
+  color: #ffffff;
+  padding: 15px 35px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.results-book {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.results-desc {
+  width: 50%;
+
+  p {
+    font-size: 12px;
+    margin: 10px 0px;
+    color: #3d3d3d;
+  }
+  h3 {
+    font-size: 47px;
+    font-weight: 600;
+    color: #000000;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  .results-desc-p {
+    font-size: 15px;
+    color: #1d1a1a;
+    line-height: 1.5;
+    margin: 10px 0;
+    word-spacing: normal;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
+}
+
+.results-book-btn {
+  background: #122c89;
+  padding: 15px 35px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.results-img {
+  width: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.brand-data {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.brand-data-img {
+  width: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.brand-data-desc {
+  width: 50%;
+  padding: 35px 0px 20px 0px;
+
+  p {
+    font-size: 10px;
+    font-weight: 500;
+    margin: 10px 0px;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+}
+.brand-data-btn {
+  background: #122c89;
+  font-size: 16px;
+  padding: 15px 35px;
+  border-radius: 8px;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.game-plan {
+  width: 90%;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 40px;
+    margin: 10px 0px;
+    color: #122c89;
+    font-weight: 600;
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+    margin: 10px 0px;
+    color: #444;
+    text-align: center;
+  }
+}
+
+footer {
+  background: #fafafa;
+  padding: 145px 0 30px;
+}
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 150px;
+}
+.footer-logo {
+  width: 236.27px;
+  height: 118.13px;
+  margin: 16px 0px 0px;
+
+  img {
+    height: auto;
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+
+.footer-top {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #122c89;
+
+  .footer-box {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    padding: 0px 15px;
+
+    p {
+      font-size: 15px;
+      margin: 2px 0 31px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin: 0 0 13px;
+    }
+    .small {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #9e9e9e;
+      margin-bottom: 8px;
+    }
+    .proposal-btn {
+      padding: 7px 12px;
+      margin: 10px 0 0;
+      border: 1px solid black;
+      background: transparent;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+.social span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 8px;
+  font-size: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 154px;
+
+  .bottom-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+  }
+}
+.footer-bottom-box {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.1px;
+  padding: 0px 15px;
+
+  p {
+    font-size: 11px;
+    margin: 10px 0px;
+    color: #9e9e9e;
+    letter-spacing: 2px;
+  }
+  .footer-h5 {
+    font-size: 15px;
+    margin: 10px 0px;
+    color: #000000;
+    letter-spacing: 0.1px;
+    line-height: 1.6;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 992px){
+   /* tab */
+  .menu{
+    display: none;
+  }
+
+  .hero h4{
+    font-size: 30px;
+  }
+  .hero h1{
+    font-size: 70px;
+  }
+  .service{
+    flex-direction: column;
+  }
+
+  .service-text{
+    width: 100%;
+  }
+  .service-text,
+  .service-image{
+    width: 100%;
+  }
+
+  .experience-text{
+    flex-direction: column;
+  }
+
+  .experience-h3,
+  .experience-para{
+    width: 100%;
+  }
+
+  .experience-box{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .cta-content{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .results-book{
+    flex-direction: column;
+  }
+
+  .results-desc{
+    width: 100%;
+  }
+  .results-img{
+    width: 100%;
+  }
+
+  .brand-data{
+    flex-direction: column;
+  }
+  .brand-data-img{
+    width: 100%;
+  }
+  .brand-data-desc{
+    width: 100%;
+  }
+
+  
+
+  .container{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-top{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .bottom-container{
+    flex-direction: column;
+  }
+}
+
+
+
+
+@media (max-width: 600px){
+      /* mobile */
+  header{
+    height: auto;
+  }
+
+  .logo{
+    width: 120px;
+    margin-left: 20px;
+  }
+
+  .menu-right{
+    margin-right: 20px;
+  }
+
+  .hero{
+    margin-top: 80px;
+  }
+
+  .hero h1{
+    font-size: 45px;
+  }
+
+  .hero h4{
+    font-size: 20px;
+  }
+
+  .works-btn{
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .service-title{
+    font-size: 30px;
+  }
+
+  .service-desc{
+    font-size: 16px;
+  }
+
+  .experience-h3 h3{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .experience-title{
+    font-size: 15px;
+  }
+
+  .card{
+    width: 100% ;
+  }
+
+  .cta-text h2{
+    font-size: 25px;
+  }
+
+  .cta-text p{
+    font-size: 14px;
+  }
+
+  .cta-btn a{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .team h2{
+    font-size: 18px;
+  }
+
+  .img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  .results-desc h3{
+    font-size: 28px;
+  }
+
+  .results-desc-p{
+    font-size: 14px;
+  }
+
+  .brand-data-desc h2{
+    font-size: 22px;
+  }
+
+  .game-plan h2{
+    font-size: 25px;
+  }
+
+  .game-plan p{
+    font-size: 14px;
+  }
+
+  .footer-logo img{
+    margin-left: 0;
+  }
+
+}
