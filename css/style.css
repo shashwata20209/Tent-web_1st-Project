@@ -108,8 +108,8 @@ header ul {
 }
 .logo-slider {
   display: flex;
-  width: calc(200%);
-  animation: slide 40s linear infinite;
+  width: max-content;
+  animation: slide 50s linear infinite;
 
   img {
     width: 150px;
@@ -525,7 +525,7 @@ footer {
   padding: 80px 0 30px;
 }
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
